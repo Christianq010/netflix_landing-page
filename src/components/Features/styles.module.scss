@@ -1,0 +1,35 @@
+@import "./../../scss/variables";
+
+// Features Tab SCSS
+
+#features {
+    background-color: $feature-grey;
+    border-bottom: 2px solid #3d3d3d; 
+    .featureNav {
+        padding: 35px 0 0 0;
+        a {
+            text-decoration: none;
+            text-align: center;
+            vertical-align: top;
+            font-weight: bold;
+            color: $feature-grey-font;
+            height: 125px;
+            line-height: 20px;
+
+            &:hover {
+                color: white;
+            }
+            h2 {
+                margin: 10px 0 0;
+                font-size: 1em;
+            }
+            svg {
+                fill: $feature-grey-font;
+                &:hover {
+                    fill: white;
+                }
+            }
+        }
+    }
+    
+}
