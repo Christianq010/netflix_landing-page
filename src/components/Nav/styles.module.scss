@@ -1,0 +1,16 @@
+// Main Navbar
+
+nav {
+    height: 90px;
+    // Our Netflix logo
+    img {
+        width: 167px;
+        height : 45px;
+        vertical-align: middle;
+    }
+    .logo {
+        display: inline-block;
+        line-height: 90px;
+        margin: 0 0 0 3%;
+    }
+}

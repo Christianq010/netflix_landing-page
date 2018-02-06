@@ -2,7 +2,7 @@ import React from 'react';
 
 // import styled from 'styled-components';
 import Nav from './../Nav/Nav';
-import classes from './styles.module.css';
+import classes from './styles.module.scss';
 
 const header = () => {
     return (
