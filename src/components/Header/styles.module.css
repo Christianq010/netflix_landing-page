@@ -1,0 +1,19 @@
+.default {
+    font-style: italic;
+}
+
+.App-header {
+    background: url("./img/bg.jpg"); /* For browsers that do not support gradients */
+    background: 
+                /* top, transparent red, faked with gradient */ 
+                linear-gradient(
+                    to right,
+                rgba(0, 0, 0, 0.75), 
+                rgba(0, 0, 0, 0.09)
+                ),
+                /* bottom, image */
+                url("./img/bg.jpg");
+                height: 100vh;
+}
+
+
