@@ -1,7 +1,10 @@
-// Main Navbar
+@import "./../../scss/variables";
+
+// Main Navbar SCSS
 
 nav {
     height: 90px;
+    font-family: $font-stack;
     // Our Netflix logo
     img {
         width: 167px;

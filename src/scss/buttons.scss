@@ -1,6 +1,8 @@
-.signin {
-  color: white;
-  background-color: #e50914;
+@import "./variables";
+
+@mixin signin {
+  color: $white;
+  background-color: $btn-red;
   line-height: normal;
   margin: 18px 3% 0 0;
   padding: 7px 17px;
@@ -8,4 +10,30 @@
   border-radius: 3px;
   font-size: 16px;
   text-decoration: one;
+
+  &:hover {
+    background-color: $btn-red-hover;
+  }
+}
+
+@mixin joinButton {
+  font-size: 14px;
+  letter-spacing: 1.9px;
+  font-weight: 200;
+  margin: 0.5em 0.5em 0.5em 0;
+  padding: 12px 2em;
+  color: $white;
+  background-color: $btn-red;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: $font-stack-two;
+  border-radius: 2px;
+  user-select: none;
+  text-align: center;
+  border: 0;
+
+  &:hover {
+    background-color: $btn-red-hover;
+  }
 }

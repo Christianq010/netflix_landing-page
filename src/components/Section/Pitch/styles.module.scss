@@ -1,0 +1,24 @@
+@import "./../../../scss/variables";
+@import "./../../../scss/buttons";
+
+// Section/ Pitch SCSS 
+section {
+    color: $white;
+    margin: 0 3%;
+    position: absolute;
+    top: 35%;
+    font-size: 1.8vw;
+    .pitchTitle {
+        font-size: 3em;
+        margin: 0 0 0.2em;
+        font-weight: 700;
+        
+    }
+    .pitchSubtitle {
+        margin: 0 0 0.5em;
+    }
+    // Join Now Button
+    .joinButton {
+        @include joinButton;
+    }
+}

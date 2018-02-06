@@ -1,7 +1,6 @@
-.default {
-    font-style: italic;
-}
+@import "./../../scss/variables";
 
+// Header SCSS
 .App-header {
     background: url("./img/bg.jpg"); /* For browsers that do not support gradients */
     background: 
@@ -14,6 +13,10 @@
                 /* bottom, image */
                 url("./img/bg.jpg");
                 height: 100vh;
+}
+
+.default {
+    color: $white;
 }
 
 
