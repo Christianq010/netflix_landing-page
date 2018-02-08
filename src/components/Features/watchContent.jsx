@@ -5,12 +5,11 @@ import './styles.module.scss';
 
 const watchContent = () => {
     return (
-        <section>
+        <span>
             <div className="content">
                 {/* <p onClick={props.click}>{props.children}</p> */}
-                <p>Watch Content</p>
             </div>
-        </section>
+        </span>
     )
 }
 

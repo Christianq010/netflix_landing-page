@@ -5,12 +5,11 @@ import './styles.module.scss';
 
 const pickPrice = () => {
     return (
-        <section>
+        <span>
             <div className="content">
                 {/* <p onClick={props.click}>{props.children}</p> */}
-                <p>Cancel Content</p>
             </div>
-        </section>
+        </span>
     )
 }
 

@@ -5,12 +5,11 @@ import './styles.module.scss';
 
 const cancelContent = () => {
     return (
-        <section>
+        <span>
             <div className="content">
-                {/* <p onClick={props.click}>{props.children}</p> */}
-                <p>Cancel Content</p>
+                {/* <p>Cancel Content</p> */}
             </div>
-        </section>
+        </span>
     )
 }
 

@@ -7,6 +7,7 @@
     border-bottom: 2px solid #3d3d3d;
     .featureNav {
         padding: 35px 0 0 0;
+        cursor: pointer;
         a {
             text-decoration: none;
             text-align: center;
@@ -29,10 +30,10 @@
             svg {
                 fill: $feature-grey-font;
             }
-            section {
-                .content {
-                    
-                }
+            .content {
+                padding: 15px 0 0 0;
+                display: block;
+                border-bottom: 5px solid $btn-red;
             }
         }
     }
