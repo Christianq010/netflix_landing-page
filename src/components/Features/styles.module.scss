@@ -11,11 +11,15 @@
         a {
             text-decoration: none;
             text-align: center;
-            vertical-align: top;
+            // vertical-align: top;
             font-weight: bold;
             color: $feature-grey-font;
             height: 125px;
             line-height: 20px;
+            display: block;
+            flex-basis: 0;
+            flex-grow: 1;
+            flex-shrink: 1;
 
             &:hover {
                 color: white;

@@ -5,9 +5,9 @@ import './styles.module.scss';
 
 const cancelContent = () => {
     return (
-        <span>
-            <div className="content">
-                {/* <p>Cancel Content</p> */}
+        <span className="content">
+            <div>
+                {/* <p>Hello</p> */}
             </div>
         </span>
     )
