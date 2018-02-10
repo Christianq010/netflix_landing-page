@@ -21,20 +21,24 @@ const Nav = styled.nav`
 `;
 
 const Button = styled.button`
-  color: white;
-  background-color: #e50914;
-  line-height: normal;
-  margin: 18px 3% 0 0;
-  padding: 7px 17px;
-  font-weight: 300;
-  border: transparent;
-  border-radius: 3px;
-  font-size: 16px;
-  text-decoration: one;
+    color: white;
+    cursor: pointer;
+    background-color: #e50914;
+    line-height: normal;
+    margin: 18px 3% 0 0;
+    padding: 7px 17px;
+    font-weight: 300;
+    border: transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    text-decoration: one;
 
-  ${props => props.right && css`
-    float: right;
-  `}
+    ${props => props.right && css`
+        float: right;
+    `}
+    &:hover {
+        background-color: #E53935;
+    }
 `;
 
 const nav = () => {
