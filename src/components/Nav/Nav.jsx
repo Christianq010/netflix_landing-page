@@ -3,7 +3,22 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 import netflixlogo from './img/logo.svg';
-import './styles.module.scss';
+
+const Nav = styled.nav`
+    height: 90px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* Netflix logo */
+    img {
+        width: 167px;
+        height : 45px;
+        vertical-align: middle;
+    }
+    .logo {
+        display: inline-block;
+        line-height: 90px;
+        margin: 0 0 0 3%;
+    }
+`;
 
 const Button = styled.button`
   color: white;
@@ -16,7 +31,7 @@ const Button = styled.button`
   border-radius: 3px;
   font-size: 16px;
   text-decoration: one;
-  
+
   ${props => props.right && css`
     float: right;
   `}
@@ -24,12 +39,12 @@ const Button = styled.button`
 
 const nav = () => {
     return (
-      <nav>
-        <a href={"www.google.lk"} className="logo">
+      <Nav>
+        <a href={"/"} className="logo">
             <img src={netflixlogo} alt="Netflix Logo" />
         </a>
         <Button right>Sign In</Button>
-      </nav>
+      </Nav>
     )
 }
 
