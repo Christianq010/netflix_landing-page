@@ -2,14 +2,26 @@ import React from 'react';
 
 import Nav from './../Nav/Nav';
 import SectionPitch from './../Section/Pitch/Pitch'
-import './styles.module.scss';
+
+import bgimg from './img/bg.jpg'
+import styled from 'styled-components';
+
+const Header = styled.header`
+    background: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.75), 
+                rgba(0, 0, 0, 0.09)
+                ),
+                url(${bgimg});
+                height: 100vh;
+`;
 
 const header = () => {
     return (
-      <header className="App-header">
+      <Header>
         <Nav />
         <SectionPitch />
-      </header>
+      </Header>
     )
 }
 
