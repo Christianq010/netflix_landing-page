@@ -6,32 +6,32 @@ Tools used to aid the Front-end work were [Styled Components](https://www.styled
 
 ## Site Preview
 
-[![Site Preview](https://preview.ibb.co/gfo2an/netflix_clone.png)](https://preview.ibb.co/gfo2an/netflix_clone.png)
+[![Site Preview](https://cdn.pbrd.co/images/H7cdcIj.png)](https://pasteboard.co/H7cdcIj.png)
 
 
 ## Usage
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ### Deployed
-Deployed via [Surge](https://surge.sh/) at netflix-lp-clone.surge.sh
+Deployed via [Surge](https://surge.sh/) at https://netflix-lp-clone.surge.sh
 
 
-## Installation
+## Instructions
 
-* Install
+#### Install
 
 ```sh
 $ yarn install
 ```
 
-### Run Server
+#### Run Server
 This will watch your files, compile them and run your dev server at http://localhost:3000
 
 ```sh
 $ yarn start
 ```
 
-* Build
+#### Build
 
 ```sh
 $ yarn build
