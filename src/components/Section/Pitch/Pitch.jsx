@@ -25,7 +25,7 @@ const Subtitle = styled.p`
 const MainJoinButton = styled.button`
     font-size: 14px;
     letter-spacing: 1.9px;
-    font-weight: 200;
+    font-weight: 100;
     margin: 0.5em 0.5em 0.5em 0;
     padding: 12px 2em;
     color: white;

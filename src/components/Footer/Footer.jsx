@@ -9,6 +9,7 @@ const Footer = styled.footer`
 
 const Text = styled.p`
     color: #777;
+    font-weight: 100;
     margin: 5px 0 30px;
 
     ${props => props.small && css`

@@ -32,7 +32,7 @@ const H2 = styled.h2`
 const JoinButton4 = styled.button`
     font-size: 14px;
     letter-spacing: 1.9px;
-    font-weight: 200;
+    font-weight: 100;
     margin: 0.5em 0.5em 0.5em 1.7em;
     padding: 18px 20px;
     color: white;

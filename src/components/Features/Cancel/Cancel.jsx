@@ -1,7 +1,6 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import './styles.module.scss';
 
 import CancelImage from './cancel.png'
 
@@ -35,7 +34,7 @@ const H2 = styled.h2`
 const JoinButton2 = styled.button`
     font-size: 14px;
     letter-spacing: 1.9px;
-    font-weight: 200;
+    font-weight: 100;
     margin: 0.5em 0.5em 0.5em 0;
     padding: 18px 20px;
     color: white;
