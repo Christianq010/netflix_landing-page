@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './App.scss';
 
-import Header from './components/Header/Header'
-import Features from './components/Features/Features'
+import Header from './components/Header/Header';
+import Features from './components/Features/Features';
+import Footer from './components/Footer/Footer';
+
 
 class App extends Component {
   render() {
@@ -10,6 +12,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Features />
+        <Footer />
       </div>
     );
   }
