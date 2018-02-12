@@ -20,6 +20,9 @@ const Columns = styled.div`
     ${props => props.center && css`
         margin: 0 auto;
     `}
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 `;
 
 const Column = styled.div`
@@ -39,6 +42,9 @@ const Column = styled.div`
     ${props => props.mb60 && css`
         margin-bottom: 60px;
     `}
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
 `;
 
 const IMG = styled.img`

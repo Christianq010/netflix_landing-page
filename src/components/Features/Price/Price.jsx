@@ -14,6 +14,9 @@ const Wrapper = styled.section`
 const DivWrapper = styled.div`
     width: 90%;
     margin: 0 auto;
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
 `;
 
 const H2 = styled.h2`

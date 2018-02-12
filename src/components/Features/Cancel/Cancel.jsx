@@ -12,6 +12,10 @@ const Wrapper = styled.section`
 
 const Columns = styled.div`
     display: flex;
+    @media (max-width: 900px) {
+        flex-direction: column;
+        text-align: center;
+    }
 `;
 
 const Column = styled.div`

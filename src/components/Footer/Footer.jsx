@@ -5,6 +5,9 @@ import styled, { css } from 'styled-components';
 const Footer = styled.footer`
     margin: 0 auto;
     width: 70%;
+    @media (max-width: 900px) {
+        width: 90%;
+    }
 `;
 
 const Text = styled.p`
