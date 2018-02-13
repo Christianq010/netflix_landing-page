@@ -9,6 +9,10 @@ const Section = styled.section`
     position: absolute;
     top: 35%;
     font-size: 1.8vw;
+    @media (max-width: 1000px) {
+        top: 55%;
+        font-size: 1.9vw;
+    }
 `;
 
 const Title = styled.h1`

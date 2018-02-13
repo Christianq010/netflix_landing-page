@@ -14,6 +14,9 @@ const Header = styled.header`
                 ),
                 url(${bgimg});
                 height: 100vh;
+    @media (max-width: 1000px) {
+      height: 90vh;
+    }
 `;
 
 const header = () => {
