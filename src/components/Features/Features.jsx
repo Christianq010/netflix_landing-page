@@ -46,6 +46,12 @@ const Features = styled.div`
             fill: white;
         }
     }
+    @media (max-width: 900px) {
+        svg {
+            width: 100%;
+            height: 34px;
+        }
+    }
 `;
 
 const Wrapper = styled.div `
@@ -57,6 +63,9 @@ const Selectedspan = styled.span`
     padding: 15px 0 0 0;
     display: block;
     border-bottom: 5px solid #e50914;
+    @media (max-width: 900px) {
+        padding: 30px 0 0 0;
+    }
 `;
 
 class features extends Component {
