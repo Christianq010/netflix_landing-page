@@ -9,6 +9,9 @@ import PCimg from './img/asset_website_UI.png'
 const Wrapper = styled.section`
     width: 80%;
     margin: 0 auto;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
 `;
 
 const Columns = styled.div`

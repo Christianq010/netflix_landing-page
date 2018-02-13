@@ -13,6 +13,12 @@ const Section = styled.section`
         top: 55%;
         font-size: 1.9vw;
     }
+    @media (max-width: 800px) {
+        top: 60%;
+        font-size: 3.2vw;
+        margin: 0 4em;
+        text-align: center;
+    }
 `;
 
 const Title = styled.h1`

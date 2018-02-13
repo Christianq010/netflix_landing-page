@@ -33,6 +33,11 @@ const H2 = styled.h2`
     color: white;
     font-weight: 400;
     margin: 60px 0 20px;
+    @media (max-width: 900px) {
+        font-size: 22px;
+        font-weight: 100;
+    }
+
 `;
 
 const JoinButton2 = styled.button`
