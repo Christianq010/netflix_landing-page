@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.scss';
 
-import Header from './components/Header/Header';
-import Features from './components/Features/Features';
-import Footer from './components/Footer/Footer';
+import Header from './../components/Header/Header';
+import Features from './../components/Features/Features';
+import Footer from './../components/Footer/Footer';
 
 
 class App extends Component {
