@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import styled, {css} from 'styled-components';
 
@@ -88,78 +88,196 @@ const Table = styled.table`
             }
         }
     }
+    @media (max-width: 700px) {
+        text-align: center;
+        background-color: transparent;
+        font-size: 12px;
+    }
 `;
 
 
-const pickPrice = () => {
-    return (
-        <Wrapper>
-            <DivWrapper>
-                <H2 inline>Choose one plan and watch everything on Netflix.</H2>
-                <JoinButton4>JOIN FREE FOR A MONTH</JoinButton4>
-            </DivWrapper>
-                <Table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Basic</th>
-                            <th>Standard</th>
-                            <th>Premium</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monthly price after free month ends on 3/7/18</td>
-                            <td>USD7.99</td>
-                            <td>USD9.99</td>
-                            <td>USD11.99</td>
-                        </tr>
-                        <tr>
-                            <td>HD available</td>
-                            <td><GoX /></td>
-                            <td><GoCheck /></td>
-                            <td><GoCheck /></td>
-                        </tr>
-                        <tr>
-                            <td>Ultra HD available</td>
-                            <td><GoX /></td>
-                            <td><GoX /></td>
-                            <td><GoCheck /></td>
-                        </tr>
-                        <tr>
-                            <td>Screens you can watch on at the same time</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Watch on your laptop, TV, phone and tablet</td>
-                            <td><GoCheck /></td>
-                            <td><GoCheck /></td>
-                            <td><GoCheck /></td>
-                        </tr>
-                        <tr>
-                            <td>Unlimited movies and TV shows</td>
-                            <td><GoCheck /></td>
-                            <td><GoCheck /></td>
-                            <td><GoCheck /></td>
-                        </tr>
-                        <tr>
-                            <td>Cancel anytime</td>
-                            <td><GoCheck /></td>
-                            <td><GoCheck /></td>
-                            <td><GoCheck /></td>
-                        </tr>
-                        <tr>
-                            <td>First month free</td>
-                            <td><GoCheck /></td>
-                            <td><GoCheck /></td>
-                            <td><GoCheck /></td>
-                        </tr>
-                    </tbody>
-                </Table>
-        </Wrapper>
-    )
+class Price extends Component {
+    constructor() {
+        super()
+        this.state = {
+            // For Mobile Layout 
+            width: window.innerWidth
+        }
+    }
+    // method for Mobile view or Desktop
+    componentWillMount() {
+        window.addEventListener('resize', this.handleWindowSizeChange);
+    }
+    // make sure to remove the listener
+    // when the component is not mounted anymore
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleWindowSizeChange);
+    }
+    handleWindowSizeChange = () => {
+        this.setState({ width: window.innerWidth });
+    };
+
+    render () {
+
+        const { width } = this.state;
+        const isMobile = width <= 700;
+
+        if (isMobile) {
+        return (
+            <Wrapper>
+                <DivWrapper>
+                    <H2 inline>Choose one plan and watch everything on Netflix.</H2>
+                    <JoinButton4>JOIN FREE FOR A MONTH</JoinButton4>
+                </DivWrapper>
+                    <Table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Basic</th>
+                                <th>Standard</th>
+                                <th>Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monthly price after free month ends on 3/7/18</td>
+                            </tr>
+                            <tr>
+                                <td>USD7.99</td>
+                                <td>USD9.99</td>
+                                <td>USD11.99</td>
+                            </tr>
+                            <tr>
+                                <td>HD available</td>
+                            </tr>
+                            <tr>
+                                <td><GoX /></td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                            <tr>
+                                <td>Ultra HD available</td>
+                            </tr>
+                            <tr>
+                                <td><GoX /></td>
+                                <td><GoX /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                            <tr>
+                                <td>Screens you can watch on at the same time</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Watch on your laptop, TV, phone and tablet</td>
+                            </tr>
+                            <tr>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                            <tr>
+                                <td>Unlimited movies and TV shows</td>
+                            </tr>
+                            <tr>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                            <tr>
+                                <td>Cancel anytime</td>
+                            </tr>
+                            <tr>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                            <tr>
+                                <td>First month free</td>
+                            </tr>
+                            <tr>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                        </tbody>
+                    </Table>
+            </Wrapper>
+            )
+        } else {
+            return (
+                <Wrapper>
+                <DivWrapper>
+                    <H2 inline>Choose one plan and watch everything on Netflix.</H2>
+                    <JoinButton4>JOIN FREE FOR A MONTH</JoinButton4>
+                </DivWrapper>
+                    <Table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Basic</th>
+                                <th>Standard</th>
+                                <th>Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monthly price after free month ends on 3/7/18</td>
+                                <td>USD7.99</td>
+                                <td>USD9.99</td>
+                                <td>USD11.99</td>
+                            </tr>
+                            <tr>
+                                <td>HD available</td>
+                                <td><GoX /></td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                            <tr>
+                                <td>Ultra HD available</td>
+                                <td><GoX /></td>
+                                <td><GoX /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                            <tr>
+                                <td>Screens you can watch on at the same time</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Watch on your laptop, TV, phone and tablet</td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                            <tr>
+                                <td>Unlimited movies and TV shows</td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                            <tr>
+                                <td>Cancel anytime</td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                            <tr>
+                                <td>First month free</td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                                <td><GoCheck /></td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </Wrapper>
+            );
+        }
+    }
 }
 
-export default pickPrice;
+export default Price;
