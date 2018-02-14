@@ -10,7 +10,7 @@ Tools used to aid the Front-end work were [Styled Components](https://www.styled
 
 
 ## Usage
-> This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+> This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app)
 
 ### Deployed
 Deployed via [Surge](https://surge.sh/) at https://netflix-lp-clone.surge.sh
@@ -39,3 +39,4 @@ $ yarn build
 
 ### Additional Resources 
 * React Icons -  https://gorangajic.github.io/react-icons/index.html
+* Different components for Mobile and Desktop view - https://goshakkk.name/different-mobile-desktop-tablet-layouts-react/
