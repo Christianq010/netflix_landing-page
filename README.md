@@ -38,5 +38,6 @@ $ yarn build
 ```
 
 ### Additional Resources 
+* Styled Components Tips and Tricks - https://github.com/styled-components/styled-components/blob/master/docs/tips-and-tricks.md
 * React Icons -  https://gorangajic.github.io/react-icons/index.html
 * Different components for Mobile and Desktop view - https://goshakkk.name/different-mobile-desktop-tablet-layouts-react/
