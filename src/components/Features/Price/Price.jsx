@@ -92,6 +92,31 @@ const Table = styled.table`
         text-align: center;
         background-color: transparent;
         font-size: 12px;
+        thead {
+            th {
+                text-align: center;
+                width: 35%;
+            }
+        }
+        tbody {
+            td {
+                text-align: center;
+                padding: 1em 0;
+                &:first-child {
+                    text-align: center;
+                }
+            }
+            tr {
+                &:nth-child(2n) {
+                    background-color: transparent;
+                }
+            }
+        }
+        .bold {
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: 700;
+        }
     }
 `;
 
@@ -132,7 +157,6 @@ class Price extends Component {
                     <Table>
                         <thead>
                             <tr>
-                                <th></th>
                                 <th>Basic</th>
                                 <th>Standard</th>
                                 <th>Premium</th>
@@ -140,15 +164,19 @@ class Price extends Component {
                         </thead>
                         <tbody>
                             <tr>
+                                <td></td>
                                 <td>Monthly price after free month ends on 3/7/18</td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td>USD7.99</td>
-                                <td>USD9.99</td>
-                                <td>USD11.99</td>
+                                <td className="bold">USD7.99</td>
+                                <td className="bold">USD9.99</td>
+                                <td className="bold">USD11.99</td>
                             </tr>
                             <tr>
+                                <td></td>
                                 <td>HD available</td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td><GoX /></td>
@@ -156,7 +184,9 @@ class Price extends Component {
                                 <td><GoCheck /></td>
                             </tr>
                             <tr>
+                                <td></td>
                                 <td>Ultra HD available</td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td><GoX /></td>
@@ -164,7 +194,9 @@ class Price extends Component {
                                 <td><GoCheck /></td>
                             </tr>
                             <tr>
+                                <td></td>
                                 <td>Screens you can watch on at the same time</td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -172,7 +204,9 @@ class Price extends Component {
                                 <td>4</td>
                             </tr>
                             <tr>
+                                <td></td>
                                 <td>Watch on your laptop, TV, phone and tablet</td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td><GoCheck /></td>
@@ -180,7 +214,9 @@ class Price extends Component {
                                 <td><GoCheck /></td>
                             </tr>
                             <tr>
+                                <td></td>
                                 <td>Unlimited movies and TV shows</td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td><GoCheck /></td>
@@ -188,7 +224,9 @@ class Price extends Component {
                                 <td><GoCheck /></td>
                             </tr>
                             <tr>
+                                <td></td>
                                 <td>Cancel anytime</td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td><GoCheck /></td>
@@ -196,7 +234,9 @@ class Price extends Component {
                                 <td><GoCheck /></td>
                             </tr>
                             <tr>
+                                <td></td>
                                 <td>First month free</td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td><GoCheck /></td>
